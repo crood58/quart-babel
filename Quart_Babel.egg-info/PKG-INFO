@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: Quart-Babel
+Version: 0.0.1
+Summary: Adds i18n/l10n support to Quart applications
+Home-page: https://github.com/crood58/quart-babel
+Author: Chris Rood
+Author-email: crood58@gmail.com
+Maintainer: Chris Rood
+Maintainer-email: crood58@gmail.com
+License: BSD
+Description: # Quart Babel
+        
+        Implements i18n and l10n support for Quart.  This is based on the Python
+        [babel][] module as well as [pytz][] both of which are installed automatically
+        for you if you install this library.
+        
+        The original code for this extension was taken from Flask-Babel. Flask-Babel can be found [here][flask-babel]
+        
+        # Installation 
+        
+        Install the extension with the following command:
+        
+            $ pip3 install quart-babel
+        
+        # Usage
+        
+        To use the extension simply import the class wrapper and pass the Quart app 
+        object back to here. Do so like this:
+        
+            from quart import Quart
+            from quart_babel import Babel 
+        
+            app = Quart(__name__)
+            babel = Babel(app)
+        
+        
+        # Documention
+        
+        The documentation for Flask-Babel can be used for Quart-Babel and is available [here][docs].
+        Just remember to that you need to call quart instead of flask and quart_babel instead of flask_babel. 
+        
+        [babel]: https://github.com/python-babel/babel
+        [pytz]: https://pypi.python.org/pypi/pytz/
+        [flask-babel]: https://flask-babel.tkte.ch/
+        [docs]: https://flask-babel.tkte.ch/
+        [semver]: https://semver.org/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: dev

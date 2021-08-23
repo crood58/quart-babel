@@ -1,0 +1,12 @@
+pytz
+Quart
+Babel>=2.3
+Jinja2>=3.1
+
+[dev]
+pytest
+pytest-mock
+bumpversion
+ghp-import
+sphinx
+Pallets-Sphinx-Themes
